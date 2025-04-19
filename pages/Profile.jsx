@@ -8,6 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./firebase/config";
 import Moment from "react-moment";
 import ReactLoading from 'react-loading';
+import {  deleteUser } from "firebase/auth";
 
 const Profile = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -74,7 +75,17 @@ const Profile = () => {
             Account Created :{" "}
             <Moment style={{color:"teal"}} fromNow date={user.metadata.creationTime} />
           </h6>
-          <button className="delet">Delete account</button>
+          <button onClick={() => {
+            deleteUser(user).then(() => {
+              console.log("doneeeeeeeee")
+              // User deleted.
+            }).catch((error) => {
+              console.log("errrrrror")
+              // An error ocurred
+              // ...
+            });
+          }
+          } className="delet">Delete account</button>
         </main>
         <Footer />
       </>
