@@ -1,0 +1,20 @@
+.myfooter footer{
+  background-color: #1b1b1b;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.dark .myfooter .ali{
+  background-color: rgba(5, 5, 5, 0.795);
+}
+
+
+
+.myfooter .ali{
+  background-color: rgba(0, 128, 128, 0.764);
+}
+
+
+ 
+
+

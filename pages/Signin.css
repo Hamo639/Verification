@@ -1,0 +1,54 @@
+.signin input{
+  color: black;
+}
+.light .signin p{
+  color: black;
+}
+.light .signin a{
+  color: teal;
+  text-decoration: underline;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+  margin-bottom: 18px;
+  border-radius: 8px;
+  padding: 10px 4px;
+  width: 270px;
+  border: 1px solid teal;
+  outline: none;
+  font-size: 20px;
+}
+main button{
+  padding: 10px 4px;
+  width: 270px;
+  background-color: teal;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+main p{
+  margin-top: 12px;
+}
+button.delet{
+  background-color: rgb(207, 44, 44);
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+}
+button.delet:active{
+  scale: 0.9;
+}
+.loading{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
